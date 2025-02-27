@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+section#sobre {
+    background-color: #FFC3FF;
+    padding: 1em;
+}
+
+section#sobre > h2 {
+    padding-left: 1em;
+    font-family: var(--fontTitulos);
+    margin-bottom: 0.5rem;
+}
+
+section#sobre > article {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+section#sobre > article > p {
+    text-align: justify;
+    text-indent: 2em;
+}
+
+section#sobre > article > img {
+    width: 400px;
+    height: 400px;
+}
+
+
