@@ -9,10 +9,14 @@ main {
     background-color: rgb(255, 255, 255);
     width: 90%;
     margin-top: 9em;
-    max-width: 600px;
     padding: 2em;
     border-radius: 1em;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.219);
+}
+@media screen and (min-width: 768px){
+    main {
+        width: 70%;
+    }
 }
 section.from-inscricao {
     width: 90%;
