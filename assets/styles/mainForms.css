@@ -18,9 +18,7 @@ main {
         width: 70%;
     }
 }
-section.from-inscricao {
-    width: 90%;
-}
+
 section.form-inscricao > p {
     margin-bottom: 1em;
 }
