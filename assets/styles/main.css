@@ -13,6 +13,11 @@ section#sobre, section#programacao {
     border-radius: 5px;
     border-bottom: 1px solid var(--colorblack);
 }
+.partsSobre {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
 
 section#sobre {
     background-color: #FFC3FF;
@@ -24,6 +29,7 @@ section#programacao {
 .diasProgramacao {
     display: flex;
     flex-flow: column nowrap;
+    align-self: flex-start;
 }
 section#sobre > h2, section#programacao > h2 {
     font-family: var(--fontTitulos);
@@ -40,7 +46,7 @@ section#sobre p, section#programacao p{
     line-height: 2em;
 }
 
-section#sobre > img {
+section#sobre img {
     width: 80%;
 }
 
@@ -96,4 +102,33 @@ div#logoInstitutos {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
+}
+
+@media screen and (min-width: 710px) {
+    section#sobre img {
+        width: 400px;
+    }
+}
+@media screen and (min-width: 992px) {
+    section#sobre, section#programacao {
+        padding: 1em;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        border-radius: 5px;
+        border-bottom: 1px solid var(--colorblack);
+    }
+
+    .partsSobre {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .partsSobre p {
+        width: 55%;
+    }
+
+    section#sobre img {
+        width: 400px;
+    }
 }

@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
 </head>
-<body>
+<body onresize="mudarTamanho()">
     <header>
         <!--Navbar para mobile-->
         <nav id="navBarOne">
@@ -38,20 +38,37 @@
                 </ul>
             </menu>
         </nav>
+        <!--Navbar para outros dispositivos-->
+        <nav id="navBarTwo">
+            <h2 id="tituloEmpresa">DiversiVida Eventos</h2>
+            <menu id="areamenu">
+                <ul id="itensmenu">
+                    <li><a href="home.html" hreflang="pt-br" onclick="clickMenu()"><span class="material-symbols-outlined">home</span> Home</a></li>
+                    <li><a href="#programacao" onclick="clickMenu()"><span class="material-symbols-outlined">calendar_month</span>Programação</a></li>
+                    <li><a href="inscrever.html" hreflang="pt-br" onclick="clickMenu()"><span class="material-symbols-outlined">check_circle</span>Inscrições</a></li>
+                </ul>
+            </menu>
+        </nav>
         <div id="apresentacao">
-            <h1>I Confraternização de conscientização dos direitos LGBTQIA+</h1>
-            <p>Dias: 15/06, 16/06 e 17/06</p>
-            <p>Local: Prédio CCET - UFMA, Campus Bacanga. </p>
+            <div id="textapresentacao">
+                <h1>I Confraternização de conscientização dos direitos LGBTQIA+</h1>
+                <p>Dias: 15/06, 16/06 e 17/06</p>
+                <p>Local: Prédio CCET - UFMA, Campus Bacanga. </p>
+            </div>
             <img src="assets/imgs/pride-lgbt300.png" alt="Mãos dadas representando o orgulho lgbt+">
         </div>
     </header>
     <main>
         <section id="sobre">
             <h2>Sobre o evento</h2>
-                <p>A I Confraternização de Conscientização dos Direitos LGBTQIA+ é um marco importante na luta pela igualdade, respeito e visibilidade da comunidade LGBTQIA+. Este evento tem como objetivo promover um espaço de diálogo, aprendizado e celebração, onde todos são convidados a refletir sobre a importância dos direitos humanos, da diversidade e da inclusão.</p>
-                <img src="assets/imgs/casal-lgbt-pride-1.jpg" alt="casal homoafetivo comemorando o orgulho">
-                <p>Por meio de palestras, rodas de conversa, atividades culturais e interativas, buscamos não apenas informar, mas também fortalecer a rede de apoio e solidariedade entre pessoas LGBTQIA+ e aliados. Acreditamos que a conscientização é o primeiro passo para combater o preconceito e construir uma sociedade mais justa e acolhedora para todos.</p>
-                <img src="assets/imgs/casal-lgbt-pride-2.png" alt="casal lésbico comemorando o orgulho">
+                <article class="partsSobre">
+                    <p>A I Confraternização de Conscientização dos Direitos LGBTQIA+ é um marco importante na luta pela igualdade, respeito e visibilidade da comunidade LGBTQIA+. Este evento tem como objetivo promover um espaço de diálogo, aprendizado e celebração, onde todos são convidados a refletir sobre a importância dos direitos humanos, da diversidade e da inclusão.</p>
+                    <img src="assets/imgs/casal-lgbt-pride-1.jpg" alt="casal homoafetivo comemorando o orgulho">
+                </article>
+                <article class="partsSobre">
+                    <p>Por meio de palestras, rodas de conversa, atividades culturais e interativas, buscamos não apenas informar, mas também fortalecer a rede de apoio e solidariedade entre pessoas LGBTQIA+ e aliados. Acreditamos que a conscientização é o primeiro passo para combater o preconceito e construir uma sociedade mais justa e acolhedora para todos.</p>
+                    <img src="assets/imgs/casal-lgbt-pride-2.png" alt="casal lésbico comemorando o orgulho">
+                </article>
                 <p>Junte-se a nós nesta celebração da diversidade e na luta por um futuro onde o respeito e a igualdade sejam direitos garantidos para todos, independentemente de orientação sexual, identidade de gênero ou expressão.</p>
         </section>
         <section id="programacao" name="programacao">
@@ -98,9 +115,9 @@
         </div>
         <div id="contato">
             <h3>Contatos</h3>
-            <p><span class="material-symbols-outlined">call</span>98 9000-0000</p>
-            <p><span class="material-symbols-outlined">mail</span>diversiVidaEventos@gmail.com</p>
-            <p><span class="material-symbols-outlined">photo_camera</span>@diversividaeventos</p>
+            <p><span class="material-symbols-outlined">call</span> 98 9000-0000</p>
+            <p><span class="material-symbols-outlined">mail</span> diversiVidaEventos@gmail.com</p>
+            <p><span class="material-symbols-outlined">photo_camera</span> @diversividaeventos</p>
         </div>
     </footer>
     <script src="assets/js/mobilemenu.js"></script>
