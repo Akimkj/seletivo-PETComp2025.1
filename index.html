@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/styles/all.css">
     <link rel="stylesheet" href="assets/styles/header.css">
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
 </head>
 <body>
     <header>
@@ -31,9 +32,9 @@
             <span class="material-symbols-outlined" id="iconMenu" onclick="clickMenu()">menu</span>
             <menu id="areamenu">
                 <ul id="itensmenu">
-                    <li><a href=""><span class="material-symbols-outlined">home</span> Home</a></li>
-                    <li><a href=""><span class="material-symbols-outlined">calendar_month</span>Programação</a></li>
-                    <li><a href=""><span class="material-symbols-outlined">check_circle</span>Inscrições</a></li>
+                    <li><a href="home.html" hreflang="pt-br" onclick="clickMenu()"><span class="material-symbols-outlined">home</span> Home</a></li>
+                    <li><a href="#programacao" onclick="clickMenu()"><span class="material-symbols-outlined">calendar_month</span>Programação</a></li>
+                    <li><a href="inscrever.html" hreflang="pt-br" onclick="clickMenu()"><span class="material-symbols-outlined">check_circle</span>Inscrições</a></li>
                 </ul>
             </menu>
         </nav>
@@ -53,7 +54,7 @@
                 <img src="assets/imgs/casal-lgbt-pride-2.png" alt="casal lésbico comemorando o orgulho">
                 <p>Junte-se a nós nesta celebração da diversidade e na luta por um futuro onde o respeito e a igualdade sejam direitos garantidos para todos, independentemente de orientação sexual, identidade de gênero ou expressão.</p>
         </section>
-        <section id="programacao">
+        <section id="programacao" name="programacao">
             <h2>Programação</h2>
             <p>A I Confraternização de Conscientização dos Direitos LGBTQIA+ traz uma programação diversa e inclusiva, pensada para informar, inspirar e celebrar a diversidade. Confira os destaques:</p>
             <article class="diasProgramacao" id="dia1">
@@ -83,11 +84,24 @@
             </div>
         </section>
         <aside id="patrocinio">
-            <h3>instituições patrocinadoras</h3>
+            <h3>Instituições patrocinadoras</h3>
+            <div id="logoInstitutos">
+                <img src="assets/imgs/brasao-PETComp.png" alt="brasão da PETComp">
+                <img src="assets/imgs/brasao-ufma.png" alt="brasão da ufma">
+            </div>
         </aside>
     </main>
     <footer>
-
+        <div id="sobrenos">
+            <h3>Sobre nós</h3>
+            <a href="home.html" hreflang="pt-br" target="_self" rel="next"><img src="assets/imgs/logo-DiversiVidaEventos.png" alt="logo da empresa DiversiVida Eventos"></a>
+        </div>
+        <div id="contato">
+            <h3>Contatos</h3>
+            <p><span class="material-symbols-outlined">call</span>98 9000-0000</p>
+            <p><span class="material-symbols-outlined">mail</span>diversiVidaEventos@gmail.com</p>
+            <p><span class="material-symbols-outlined">photo_camera</span>@diversividaeventos</p>
+        </div>
     </footer>
     <script src="assets/js/mobilemenu.js"></script>
 </body>

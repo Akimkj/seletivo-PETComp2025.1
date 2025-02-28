@@ -20,6 +20,10 @@ nav#navBarOne {
 }
 h2#tituloEmpresa {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.315);
+    background-image: linear-gradient(to right, #DD2B35, #E56B1D, #FEFE7E, #199053, #0E3DC3, #5C0A62);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 span#iconMenu {
