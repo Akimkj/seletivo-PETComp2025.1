@@ -4,7 +4,10 @@ main {
     display: flex;
     flex-flow: column nowrap;
 }
-
+main h1 {
+    align-self: center;
+    margin-top: 8em;
+}
 section#sobre, section#programacao {
     padding: 1em;
     display: flex;
